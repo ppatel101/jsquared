@@ -16,7 +16,7 @@ Rails.application.configure do
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
-  # config.require_master_key = true
+  config.require_master_key = true
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -106,8 +106,8 @@ config.sass.style = :compressed
   port: 587,
   domain: "gmail.com",
   authentication: "plain",
-  user_name: "Rails.application.credentials.email",
-  password:"Rails.application.credentials.password",
+  user_name: Rails.application.credentials.email,
+  password: Rails.application.credentials.password,
   enable_starttls_auto: true
 }  
 end
