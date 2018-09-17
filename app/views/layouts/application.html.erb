@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Jsquaredemo1</title>
-        <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -19,16 +19,18 @@
   </head>
 
   <body>
-
+  <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
   <header id="header">
     <div class="container-fluid">
       <div id="logo" class="pull-left">
-        <h1><a href="#intro" class="scrollto">Tour & Travel</a></h1>
+        <h1><a href="" class="scrollto">Tour & Travel</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
       </div>
 
-      <nav id="nav-menu-container">
+      <nav id="nav-menu-container" role="navigation">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -49,13 +51,7 @@
     </div>
   </header><!-- #header -->
 
-
-    <div class="page-wrapper">
-
-      <!-- Preloader -->
-      <div class="preloader"></div>
-
-      <!--Main Slider-->
+       <!--Main Slider-->
       <section class="main-slider">
 
           <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
@@ -967,7 +963,7 @@
         <div class="auto-container">
           <h2>Join the Fight</h2>
             <br><br>
-          <a href="/users/sign_up" class="theme-btn btn-style-three">Sign Up</a>
+          <a href="" class="theme-btn btn-style-three">Sign Up</a>
         </div>
       </section>
       <!--End Call To Action Two-->
